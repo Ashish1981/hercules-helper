@@ -821,21 +821,21 @@ LDFLAGS=${LDFLAGS:-""}
 
 #-----------------------------------------------------------------------------
 
-if [ "$EUID" -eq 0 ]; then
-    echo    # print a new line
-    echo "Running this as root is dangerous and can cause misconfiguration issues"
-    echo "or damage to your system.  Run as a normal user, and the parts that need"
-    echo "it will ask for your sudo password (if required)."
-    echo    # print a new line
-    echo "For information, see:"
-    echo "https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root"
-    echo "https://wiki.debian.org/sudo/"
-    echo "https://phoenixnap.com/kb/how-to-create-add-sudo-user-centos"
-    echo    # print a new line
-    read -p "Hit return to exit" -n 1 -r
-    echo    # print a new line
-    exit 1
-fi
+# if [ "$EUID" -eq 0 ]; then
+#     echo    # print a new line
+#     echo "Running this as root is dangerous and can cause misconfiguration issues"
+#     echo "or damage to your system.  Run as a normal user, and the parts that need"
+#     echo "it will ask for your sudo password (if required)."
+#     echo    # print a new line
+#     echo "For information, see:"
+#     echo "https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root"
+#     echo "https://wiki.debian.org/sudo/"
+#     echo "https://phoenixnap.com/kb/how-to-create-add-sudo-user-centos"
+#     echo    # print a new line
+#     read -p "Hit return to exit" -n 1 -r
+#     echo    # print a new line
+#     exit 1
+# fi
 
 #-----------------------------------------------------------------------------
 
